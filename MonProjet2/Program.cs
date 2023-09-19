@@ -13,7 +13,7 @@ namespace MonProjet2
             Console.WriteLine("Entrer votre nom: ");
             string username = Console.ReadLine();
 
-            Console.WriteLine("\n\t\t\tBonjour " + username + ",\n\t\t\tBienvenu à MonProjet2");
+            Console.WriteLine($"\n\t\t\tBonjour {username},\n\t\t\tBienvenu à MonProjet2");
             Console.ReadKey();
         }
     }
