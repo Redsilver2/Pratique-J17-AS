@@ -14,9 +14,32 @@ namespace MonProjet2
             string username = Console.ReadLine();
 
             Console.WriteLine($"\n\t\t\tHi {username},\n\t\t\tWelcome to MyProjet2 ");
-            new Meteo();
 
-            Console.ReadKey();
+            while (true)
+            {
+                Console.WriteLine("\n\nChoose an option (weather, money or quit): ");
+                string input = Console.ReadLine();
+
+                switch (input.ToLower())
+                {
+                    case "weather":
+                        new Meteo();
+                        break;
+
+                    case "money":
+                        new Money();
+                        break;
+
+                    case "quit":
+                        Console.WriteLine("Have a nice day :D");
+                        Console.ReadKey();
+                        return;
+
+                    default:
+                        Console.WriteLine("The option is invalid.");
+                        break;
+                }
+            }
         }
     }
 }
