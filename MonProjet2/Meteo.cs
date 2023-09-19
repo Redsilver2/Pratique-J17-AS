@@ -10,7 +10,7 @@ namespace MonProjet2
     {
         public Meteo() 
         {
-            Console.WriteLine("\n\n\t\t\tWlcome to the weather tool");
+            Console.WriteLine("\n\n\t\t\tWelcome to the weather tool");
             Console.WriteLine("\n\nEnter the temperature in celcius:");
 
             float celcius    = float.Parse(Console.ReadLine());
