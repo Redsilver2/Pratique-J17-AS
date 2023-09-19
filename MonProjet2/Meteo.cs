@@ -10,13 +10,13 @@ namespace MonProjet2
     {
         public Meteo() 
         {
-            Console.WriteLine("\n\n\t\t\tBienvenu à l'outil météo ");
-            Console.WriteLine("\n\nEntrez une température en celcius:");
+            Console.WriteLine("\n\n\t\t\tWlcome to the weather tool");
+            Console.WriteLine("\n\nEnter the temperature in celcius:");
 
             float celcius    = float.Parse(Console.ReadLine());
             float fahrenheit = (celcius * 1.8f) + 32;
 
-            Console.WriteLine($"\n\t\t\t{celcius}°C est égale à { Math.Round(fahrenheit, 2) }°F");
+            Console.WriteLine($"\n\t\t\t{celcius}°C is equal to { Math.Round(fahrenheit, 2) }°F");
         }
     }
 }

@@ -10,15 +10,11 @@ namespace MonProjet2
     {
         static void Main(string[] args)
         {
-
-
-            Console.WriteLine("Entrer votre nom: ");
+            Console.WriteLine("Enter your name: ");
             string username = Console.ReadLine();
 
-            Console.WriteLine($"\n\t\t\tBonjour {username},\n\t\t\tBienvenu à MonProjet2 ");
-
+            Console.WriteLine($"\n\t\t\tHi {username},\n\t\t\tWelcome to MyProjet2 ");
             new Meteo();
-
 
             Console.ReadKey();
         }
